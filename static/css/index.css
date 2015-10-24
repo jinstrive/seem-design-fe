@@ -3,6 +3,7 @@
 }
 
 .big_banner > img {
+	width: 1000px;
 	height: 300px;
 }
 
@@ -24,11 +25,16 @@
 	width: 278px;
 	height: 184px;
 }
+
 .signaline p {
 	margin: 0 auto;
 	color: #A5A5A5;
 	text-align: center;
 	line-height: 92px;
+}
+
+.web_parter img {
+	margin:0 auto;
 }
 
 .signaline p a {
