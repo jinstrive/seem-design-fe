@@ -1,0 +1,42 @@
+.categorys {
+	height: 30px;
+}
+
+.categorys ul {
+	margin-top: 50px;
+}
+
+.categorys ul li {
+	float: left;
+	margin-right: 40px;
+}
+
+.categorys ul li a {
+	color: #a3a3a3;
+}
+
+.categorys ul li a.cate-on {
+	color: #000000;
+}
+
+.project > img {
+	width: 278px;
+	height: 184px;
+}
+
+
+.projects-content {
+	overflow: hidden;
+	clear: both;
+}
+
+.projects-content > .project {
+	float: left;
+	margin-right: 84px;
+	margin-top: 40px;
+}
+
+.project:nth-child(3n) {
+	margin-right: 0px;
+}
+

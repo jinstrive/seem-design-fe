@@ -1,0 +1,79 @@
+body {
+	margin: 0px;
+	width: 100%;
+}
+
+.main {
+	margin: 0 auto;
+	clear: both;
+}
+
+.body_content {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.body-text-content {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.nav {
+	background: #000000;
+	height: 80px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.nav_content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.page_logo {
+	float: left;
+	margin-left: 90px;
+	display: block;
+}
+
+.logo {
+	margin-top: 15px;
+	width: 221px;
+	height: 60px;
+	display: block;
+	background-image: url(../image/logo.png);
+}
+
+.menus {
+	margin-right: 40px;
+	margin-top: 46px;
+	float: right;
+}
+
+.menus li{
+	float: left;
+	margin-left: 34px;
+}
+
+.menus li a{
+	color: #FFFFFF;
+}
+
+.menus li a:hover{
+	text-decoration: underline;
+}
+
+.menu-li-on {
+	text-decoration: underline;
+}
+
+.footer p {
+	margin: 40px auto;
+	color: #A5A5A5;
+	text-align: center;
+	font-size: 14px;
+}
+
+.fs14 {
+	font-size: 14px;
+}

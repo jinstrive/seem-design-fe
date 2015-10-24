@@ -1,0 +1,51 @@
+.seemicon {
+	line-height: 260px;
+	text-align: center;
+}
+
+.seemicon img {
+	margin: auto;
+	clear: both;
+	vertical-align:middle;
+}
+
+.designersinfo {
+	display: block;
+}
+
+.persons {
+	display: block;
+	margin-top: 80px;
+}
+.davatar {
+	float: left;
+	width: 130px;
+}
+
+.textcontent {
+	width: 640px;
+	margin-left: 30px;	
+	padding-left: 130px;
+}
+
+.personame p {
+	margin-bottom: 5px;
+}
+.personame p span {
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.info-bottom-img {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.info-bottom-img img{
+	margin: auto;
+	clear: both;
+}
+
+.tminfo {
+	margin-top: 40px;
+}

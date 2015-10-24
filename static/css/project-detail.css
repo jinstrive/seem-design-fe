@@ -1,0 +1,29 @@
+.backtext {
+	margin-top: 40px;
+}
+
+.backtext a {
+	color: #000000;
+}
+
+.project-detail-content {
+	margin-top: 28px;
+}
+
+.detail-title {
+	font-size: 18px;
+}
+
+.detail-content {
+	font-size: 16px;
+}
+
+.detail-content > p {
+	margin-top: 16px;
+}
+
+.detail-content > img {
+	margin-top: 34px;
+}
+
+

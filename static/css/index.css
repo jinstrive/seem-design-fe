@@ -1,0 +1,40 @@
+.big_banner {
+	margin-top: 20px;
+}
+
+.big_banner > img {
+	height: 300px;
+}
+
+
+.image_show ul {
+	margin: 0px;
+	display: block;
+}
+
+.image_show li{
+	float: left;
+	margin-top: 40px;
+	margin-right: 83px;
+}
+.image_show ul li:nth-child(3n){
+	margin-right: 0
+}
+.image_show img {
+	width: 278px;
+	height: 184px;
+}
+.signaline p {
+	margin: 0 auto;
+	color: #A5A5A5;
+	text-align: center;
+	line-height: 92px;
+}
+
+.signaline p a {
+	color: #A5A5A5;
+}
+
+.signaline p a:hover {
+	text-decoration: underline;
+}
