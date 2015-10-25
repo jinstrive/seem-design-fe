@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/news.css">
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="http://cdn.bootcss.com/handlebars.js/4.0.3/handlebars.min.js"></script>
 </head>
 <body>
 	<div class="main">
@@ -24,8 +26,8 @@
 				</div>	
 			</div>
 		</div>
-		<div class="body-text-content">
-			<div class="news-each">
+		<div id="news_list" class="body-text-content">
+			<!-- <div class="news-each">
 				<div class="news-date">
 					<p>2015-09-21</p>
 				</div>
@@ -37,32 +39,8 @@
 					<p>#芝麻奶油面包# 面包松......</p>
 					<img src="../static/image/pic.png" alt="">
 				</div>
-			</div>
-			<div class="news-each">
-				<div class="news-date">
-					<p>2015-09-21</p>
-				</div>
-				<div class="news-title">
-					<p>【未满】生活美学工作室</p>
-				</div>
-				<div class="news-content">
-					<p>一直想去的一家店 可能是期待值太高了吧 去过之后有些失望 套餐的东西还是挺多的 特别喜欢摆盘 除了主餐不满意 其他都还可以 应该不会再去了</p>
-					<p>#芝麻奶油面包# 面包松......</p>
-					<img src="../static/image/pic.png" alt="">
-				</div>
-			</div>
-			<div class="news-each">
-				<div class="news-date">
-					<p>2015-09-21</p>
-				</div>
-				<div class="news-title">
-					<p>【未满】生活美学工作室</p>
-				</div>
-				<div class="news-content">
-					<p>一直想去的一家店 可能是期待值太高了吧 去过之后有些失望 套餐的东西还是挺多的 特别喜欢摆盘 除了主餐不满意 其他都还可以 应该不会再去了</p>
-					<p>#芝麻奶油面包# 面包松......</p>
-				</div>
-			</div>
+			</div> -->
+			
 		</div>
 
 	</div>
@@ -71,5 +49,21 @@
 		<p>© 2012 JOYN:VISCOM /JV Jab / all right reserved</p>
 	</div>
 
+	<script id="news-list-template" type="text/x-handlebars-template">​
+		{{#each this}}
+		<div class="news-each">
+			<div class="news-date">
+				<p>{{ create_time }}</p>
+			</div>
+			<div class="news-title">
+				<p>{{ title }}</p>
+			</div>
+			<div class="news-content">
+				{{{ content }}}
+			</div>
+		</div>
+		{{/each}}​
+	</script>
+	<script src="../static/js/news.js"></script>
 </body>
 </html>

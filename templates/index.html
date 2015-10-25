@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/index.css">
-	<script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="http://cdn.bootcss.com/handlebars.js/4.0.3/handlebars.min.js"></script>
 </head>
 <body>
 	<div class="main">
@@ -31,29 +32,31 @@
 			</div>
 
 			<div class="image_show">
-				<ul>
-					<li><img src="../static/image/temp_pic.png" alt=""></li>
-					<li><img src="../static/image/temp_pic.png" alt=""></li>
-					<li><img src="../static/image/temp_pic.png" alt=""></li>
-					<li><img src="../static/image/temp_pic.png" alt=""></li>
-					<li><img src="../static/image/temp_pic.png" alt=""></li>
-					<li><img src="../static/image/temp_pic.png" alt=""></li>
+				<ul id="index_pros_list">
 				</ul>
 			</div>
 
 			<div class="signaline">
-				<p><a href="#">more</a></p>
+				<p><a href="javascript:void(0)" onclick="load_proj_data();">more</a></p>
 			</div>
+
 			<div class="web_parter">
 				<img src="../static/image/website_parter.png" alt="">
 			</div>
 
 		</div>
+
 	</div>
 
 	<div class="footer">
 		<p>© 2012 JOYN:VISCOM /JV Jab / all right reserved</p>
 	</div>
 
+	<script id="index-pros-list-template" type="text/x-handlebars-template">​
+		{{#each this}}
+		<li><img src="{{ img }}" alt=""></li>
+		{{/each}}​
+	</script>
+	<script src="../static/js/index.js"></script>
 </body>
 </html>

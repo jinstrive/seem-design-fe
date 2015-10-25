@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/project-detail.css">
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="http://cdn.bootcss.com/handlebars.js/4.0.3/handlebars.min.js"></script>
+	<script src="../static/js/common.js"></script>
 </head>
 <body>
 	<div class="main">
@@ -28,8 +31,8 @@
 			<div class="backtext">
 				<a href="/projects.html"> &#60;back </a>
 			</div>
-			<div class="project-detail-content">
-				<div class="detail-title">
+			<div id="project-detail-content" class="project-detail-content">
+				<!-- <div class="detail-title">
 					<p>【未满】生活美学工作室</p>
 				</div>
 				<div class="detail-content">
@@ -38,7 +41,7 @@
 					<img src="../static/image/pic.png" alt="">
 					<img src="../static/image/pic.png" alt="">
 					<img src="../static/image/pic.png" alt="">
-				</div>
+				</div> -->
 			</div>
 
 		</div>
@@ -48,6 +51,16 @@
 	<div class="footer">
 		<p>© 2012 JOYN:VISCOM /JV Jab / all right reserved</p>
 	</div>
+
+	<script id="projects-detail-template" type="text/x-handlebars-template">​
+		<div class="detail-title">
+			<p>{{ title }}</p>
+		</div>
+		<div class="detail-content">
+			{{{ descr }}}
+		</div>
+	</script>
+	<script src="../static/js/project-detail.js"></script>
 
 </body>
 </html>

@@ -7,7 +7,6 @@
 	height: 300px;
 }
 
-
 .image_show ul {
 	margin: 0px;
 	display: block;
@@ -18,9 +17,11 @@
 	margin-top: 40px;
 	margin-right: 83px;
 }
+
 .image_show ul li:nth-child(3n){
 	margin-right: 0
 }
+
 .image_show img {
 	width: 278px;
 	height: 184px;
@@ -31,10 +32,16 @@
 	color: #A5A5A5;
 	text-align: center;
 	line-height: 92px;
+	clear: both;
+}
+
+.web_parter {
+	margin: 30px auto;
 }
 
 .web_parter img {
-	margin:0 auto;
+	margin: 0 auto;
+	clear: both;
 }
 
 .signaline p a {

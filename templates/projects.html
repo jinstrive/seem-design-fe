@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/projects.css">
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+	<script src="http://cdn.bootcss.com/handlebars.js/4.0.3/handlebars.min.js"></script>
 </head>
 <body>
 	<div class="main">
@@ -34,17 +36,8 @@
 					<li><a href="#">web</a></li>
 				</ul>
 			</div>
-			<div class="projects-content">
-				<div class="project"><a href="/project-detail.html"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
-				<div class="project"><a href="#"><img src="../static/image/temp_pic.png" alt=""></a></div>
+			<div id="projects-content" class="projects-content">
+				<!-- <div class="project"><a href="/project-detail.html"><img src="../static/image/temp_pic.png" alt=""></a></div> -->
 			</div>
 
 		</div>
@@ -54,6 +47,16 @@
 	<div class="footer">
 		<p>© 2012 JOYN:VISCOM /JV Jab / all right reserved</p>
 	</div>
+
+	<script id="projects-list-template" type="text/x-handlebars-template">​
+		{{#each this}}
+		<div class="project">
+			<a href="/project-detail.html?pid={{ id }}"><img src="{{ img }}" alt=""></a>
+		</div>
+		{{/each}}​
+	</script>
+	<script src="../static/js/projects.js"></script>
+
 
 </body>
 </html>
