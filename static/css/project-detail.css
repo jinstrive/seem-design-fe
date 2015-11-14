@@ -11,11 +11,12 @@
 }
 
 .detail-title {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .detail-content {
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .detail-content > p {

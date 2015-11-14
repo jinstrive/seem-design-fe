@@ -27,6 +27,20 @@
 	height: 184px;
 }
 
+.proj_show_title {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: #A5A5A5;	
+  	visibility: hidden;
+  	opacity: 0;
+}
+
+.image_show li:hover .proj_show_title {
+	visibility: visible;
+	opacity: 1;
+}
+
 .signaline p {
 	margin: 0 auto;
 	color: #A5A5A5;
@@ -42,7 +56,7 @@
 
 .web_parter img {
 	margin: 0 auto;
-	clear: both;
+	/*clear: both;*/
 }
 
 .signaline p a {

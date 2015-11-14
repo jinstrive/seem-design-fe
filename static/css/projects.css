@@ -19,7 +19,7 @@
 	color: #000000;
 }
 
-.project > img {
+.project a img {
 	width: 278px;
 	height: 184px;
 }
@@ -32,7 +32,7 @@
 
 .projects-content > .project {
 	float: left;
-	margin-right: 84px;
+	margin-right: 83px;
 	margin-top: 40px;
 }
 

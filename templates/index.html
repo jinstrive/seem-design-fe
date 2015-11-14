@@ -33,6 +33,14 @@
 
 			<div class="image_show">
 				<ul id="index_pros_list">
+					<!-- <li>
+						<div class="proj_show_image">
+							<a href="#"><img src="../static/image/temp_pic.png" alt=""></a>
+						</div>
+						<div class="proj_show_title">
+							测试这个标题行不行
+						</div>
+					</li> -->
 				</ul>
 			</div>
 
@@ -41,9 +49,8 @@
 			</div>
 
 			<div class="web_parter">
-				<img src="../static/image/website_parter.png" alt="">
+				<center><img src="http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144748182182.png" alt=""></center>
 			</div>
-
 		</div>
 
 	</div>
@@ -54,7 +61,14 @@
 
 	<script id="index-pros-list-template" type="text/x-handlebars-template">​
 		{{#each this}}
-		<li><a href="/project-detail.html?pid={{ id }}"><img src="{{ img }}" alt=""></a></li>
+		<li>
+			<div class="proj_show_image">
+				<a href="/project-detail.html?pid={{ id }}"><img src="{{ img }}" alt=""></a>
+			</div>
+			<div class="proj_show_title dn">
+				{{ title }}
+			</div>
+		</li>
 		{{/each}}​
 	</script>
 	<script src="../static/js/index.js"></script>
