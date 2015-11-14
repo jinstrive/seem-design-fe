@@ -21,9 +21,15 @@
 	display: block;
 	margin-top: 80px;
 }
+
 .davatar {
 	float: left;
 	width: 130px;
+}
+
+.davatar img{
+	width: 123px;
+	height: 122px;	
 }
 
 .textcontent {
