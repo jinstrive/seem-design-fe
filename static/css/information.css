@@ -9,6 +9,10 @@
 	vertical-align:middle;
 }
 
+.webinfo {
+	line-height: 26px;
+}
+
 .designersinfo {
 	display: block;
 }
@@ -47,5 +51,6 @@
 }
 
 .tminfo {
-	margin-top: 40px;
+	margin-top: 30px;
+	line-height: 26px;
 }

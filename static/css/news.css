@@ -1,10 +1,11 @@
 .news-each {
 	margin-top: 60px;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .news-title {
-	font-size: 18px;
+	font-size: 16px;
 	margin-top: 28px;
 }
 

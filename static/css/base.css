@@ -11,6 +11,7 @@ body {
 .body_content {
 	margin: 0 auto;
 	width: 1000px;
+	font-family: "宋体";
 }
 
 .body-text-content {
@@ -21,7 +22,7 @@ body {
 .nav {
 	background: #000000;
 	height: 80px;
-	font-size: 16px;
+	font-size: 15px;
 	color: #FFFFFF;
 }
 
@@ -32,20 +33,20 @@ body {
 
 .page_logo {
 	float: left;
-	margin-left: 90px;
+	margin-left: 105px;
 	display: block;
 }
 
 .logo {
-	margin-top: 15px;
-	width: 221px;
+	margin-top: 10px;
 	height: 60px;
+	width: 60px;
 	display: block;
-	background-image: url(../image/logo.png);
+	background-image: url(http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144747075357.png);
 }
 
 .menus {
-	margin-right: 40px;
+	margin-right: 105px;
 	margin-top: 46px;
 	float: right;
 }

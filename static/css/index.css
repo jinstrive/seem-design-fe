@@ -33,6 +33,7 @@
 	text-align: center;
 	line-height: 92px;
 	clear: both;
+	text-decoration: underline;
 }
 
 .web_parter {
@@ -48,6 +49,6 @@
 	color: #A5A5A5;
 }
 
-.signaline p a:hover {
+/*.signaline p a:hover {
 	text-decoration: underline;
-}
+}*/
