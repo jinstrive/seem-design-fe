@@ -39,7 +39,9 @@
 				</ul>
 			</div>
 			<div id="projects-content" class="projects-content">
-				<!-- <div class="project"><a href="/project-detail.html"><img src="../static/image/temp_pic.png" alt=""></a></div> -->
+				<ul id="pros_list">
+					<!-- <div class="project"><a href="/project-detail.html"><img src="../static/image/temp_pic.png" alt=""></a></div> -->
+				</ul>
 			</div>
 
 		</div>
@@ -52,9 +54,14 @@
 
 	<script id="projects-list-template" type="text/x-handlebars-template">​
 		{{#each this}}
-		<div class="project">
-			<a href="/project-detail.html?pid={{ id }}"><img src="{{ img }}" alt=""></a>
-		</div>
+		<li>
+			<div class="proj_show_image">
+				<a href="/project-detail.html?pid={{ id }}"><img src="{{ img }}" alt=""></a>
+			</div>
+			<div class="proj_show_title dn">
+				{{ title }}
+			</div>
+		</li>
 		{{/each}}​
 	</script>
 	<script src="../static/js/projects.js"></script>

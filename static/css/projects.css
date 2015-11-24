@@ -19,15 +19,29 @@
 	color: #000000;
 }
 
-.project a img {
+.proj_show_image a img {
 	width: 278px;
 	height: 184px;
 }
 
-
 .projects-content {
 	overflow: hidden;
 	clear: both;
+}
+
+.proj_show_image a {
+	text-decoration: none;
+}
+
+.projects-content li{
+	float: left;
+	margin-top: 40px;
+	margin-right: 55px;
+	list-style: none;
+}
+
+.projects-content ul li:nth-child(3n){
+	margin-right: 0
 }
 
 .projects-content > .project {
@@ -39,4 +53,19 @@
 .project:nth-child(3n) {
 	margin-right: 0px;
 }
+
+.proj_show_title {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: #A5A5A5;	
+  	visibility: hidden;
+  	opacity: 0;
+}
+
+.projects-content li:hover .proj_show_title {
+	visibility: visible;
+	opacity: 1;
+}
+
 
