@@ -15,7 +15,7 @@
 	color: #a3a3a3;
 }
 
-.categorys ul li a.cate-on {
+.categorys ul li.cate-on a{
 	color: #000000;
 }
 

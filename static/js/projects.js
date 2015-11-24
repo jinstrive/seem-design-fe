@@ -40,7 +40,7 @@ function load_projects_data(){
 		$.ajax({ 
 			type: 'GET',
 			url: "/seems/all_pro_info", 
-			data: {'page_num': curPage + 1, 'page_size': 10}, 
+			data: {'page_num': curPage + 1, 'page_size': 50, 'ptype': getUrlParam('ptype')}, 
 			success: function(data_json){
 				projects_list = data_json.data;
 				console.log(projects_list);
@@ -54,4 +54,20 @@ function load_projects_data(){
 	}
 }
 
+function categorys_on_change(){
+	ptype = getUrlParam('ptype');
+	// $("#pro_cates>li").removeClass("cate-on");
+	if (ptype == null){
+		$("#pro_cates>li:first").addClass("cate-on");
+		return;
+	}
+	$( "#pro_cates>li" ).each(function( index ) {
+		// console.log( index + ": " + $( this ).text() );
+		if (index == parseInt(ptype)){
+			$(this).addClass("cate-on");
+		}
+	});
+}
+
+categorys_on_change();
 load_projects_data();

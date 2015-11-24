@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/projects.css">
 	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
 	<script src="http://cdn.bootcss.com/handlebars.js/4.0.3/handlebars.min.js"></script>
+	<script src="../static/js/common.js"></script>
 </head>
 <body>
 	<div class="main">
@@ -28,12 +29,13 @@
 		</div>
 		<div class="body_content">
 			<div class="categorys">
-				<ul>
-					<li><a href="#" class="cate-on">all</a></li>
-					<li><a href="#">logo</a></li>
-					<li><a href="#">vi</a></li>
-					<li><a href="#">app</a></li>
-					<li><a href="#">web</a></li>
+				<ul id="pro_cates">
+					<!-- <li class="cate-on"><a href="#">all</a></li> -->
+					<li><a href="/projects.html">all</a></li>
+					<li><a href="/projects.html?ptype=1">logo</a></li>
+					<li><a href="/projects.html?ptype=2">vi</a></li>
+					<li><a href="/projects.html?ptype=3">app</a></li>
+					<li><a href="/projects.html?ptype=4">web</a></li>
 				</ul>
 			</div>
 			<div id="projects-content" class="projects-content">
