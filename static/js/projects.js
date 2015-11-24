@@ -32,7 +32,7 @@ function render_projects(data) {
 	// ]
 	var projectsListScript = $("#projects-list-template").html();
 	var projectsListTemplate = Handlebars.compile(projectsListScript);
-	$('#projects-content').append(projectsListTemplate(data));
+	$('#pros_list').append(projectsListTemplate(data));
 }
 
 function load_projects_data(){

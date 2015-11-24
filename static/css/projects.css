@@ -36,15 +36,14 @@
 .projects-content li{
 	float: left;
 	margin-top: 40px;
-	margin-right: 55px;
-	list-style: none;
+	margin-right: 83px;
 }
 
 .projects-content ul li:nth-child(3n){
-	margin-right: 0
+	margin-right: 0px;
 }
 
-.projects-content > .project {
+/*.projects-content > .project {
 	float: left;
 	margin-right: 83px;
 	margin-top: 40px;
@@ -53,7 +52,7 @@
 .project:nth-child(3n) {
 	margin-right: 0px;
 }
-
+*/
 .proj_show_title {
 	margin-top: 10px;
 	text-align: center;
