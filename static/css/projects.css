@@ -57,7 +57,6 @@
 	margin-top: 10px;
 	text-align: center;
 	font-size: 14px;
-	color: #A5A5A5;	
   	visibility: hidden;
   	opacity: 0;
 }
@@ -67,4 +66,11 @@
 	opacity: 1;
 }
 
+.proj_show_title:hover {
+	text-decoration: underline;
+}
+
+.proj_show_title a {
+	color: #A5A5A5;	
+}
 
