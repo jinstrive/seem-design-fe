@@ -81,6 +81,25 @@ body {
 	font-size: 14px;
 }
 
+.back-to-top {
+	position: fixed;
+	bottom: 100px;
+	right: 80px;
+	background: #000000;
+	width: 43px;
+  	/*display:none;*/
+}
+
+.back-to-top:hover {
+	cursor: pointer;
+}
+
+.blank-take {
+	display: block;
+	height: 8px;
+	background: #FFFFFF;
+}
+
 .fs14 {
 	font-size: 14px;
 }
