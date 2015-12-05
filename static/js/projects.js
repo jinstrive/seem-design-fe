@@ -78,13 +78,13 @@ $(document).ready(function () {
         var $currentWindow = $(window);  
         //当前窗口的高度  
         var windowHeight = $currentWindow.height();  
-        console.log("current widow height is " + windowHeight);  
+        // console.log("current widow height is " + windowHeight);  
         //当前滚动条从上往下滚动的距离  
         var scrollTop = $currentWindow.scrollTop();  
-        console.log("current scrollOffset is " + scrollTop);  
+        // console.log("current scrollOffset is " + scrollTop);  
         //当前文档的高度  
         var docHeight = $(document).height();  
-        console.log("current docHeight is " + docHeight);  
+        // console.log("current docHeight is " + docHeight);  
 
         //当 滚动条距底部的距离 + 滚动条滚动的距离 >= 文档的高度 - 窗口的高度  
         //换句话说：（滚动条滚动的距离 + 窗口的高度 = 文档的高度）  这个是基本的公式  

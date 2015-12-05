@@ -17,6 +17,7 @@ function load_project_detail_data(){
 		data: {'pid': getUrlParam('pid')}, 
 		success: function(data_json){
 			project_detail = data_json.data;
+			$('title').text(project_detail.title + ' -- 什目视觉 作品展示');
 			console.log(project_detail);
 			render_project_detail(project_detail);
     	}
