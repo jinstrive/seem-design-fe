@@ -2,6 +2,10 @@
 	margin-top: 40px;
 }
 
+.backtext:hover a {
+	text-decoration: underline;
+}
+
 .backtext a {
 	color: #000000;
 }

@@ -1,7 +1,7 @@
 body {
 	margin: 0px;
 	width: 100%;
-	font-family: "宋体";
+	font-family: "宋体", Georgia;
 }
 
 .main {
@@ -85,19 +85,14 @@ body {
 	position: fixed;
 	bottom: 100px;
 	right: 80px;
-	background: #000000;
+	background: url(http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144929454824.png);
 	width: 43px;
-  	/*display:none;*/
+	height: 43px;
 }
 
 .back-to-top:hover {
 	cursor: pointer;
-}
-
-.blank-take {
-	display: block;
-	height: 8px;
-	background: #FFFFFF;
+	background: url(http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144929453225.png);
 }
 
 .fs14 {
