@@ -21,6 +21,29 @@ function render_pros(data) {
 	$('#index_pros_list').append(prosListTemplate(data));
 }
 
+
+function render_banner() {
+	$.ajax({ 
+		type: 'GET',
+		url: "/seems/banners", 
+		// data: {'page_num': curPage + 1, 'page_size': 6}, 
+		success: function(data_json){
+			banner_list = data_json.data;
+			console.log(banner_list);
+			var prosListScript = $("#index-banner-list-template").html();
+			var prosListTemplate = Handlebars.compile(prosListScript);
+			$('#swiper-wrapper').append(prosListTemplate(banner_list));
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        autoplay: 2000,
+		        loop: true,
+		    });
+    	}
+  	});
+
+}
+
 function load_proj_data(){
 	if (is_more){
 		$.ajax({ 
@@ -44,4 +67,5 @@ function load_proj_data(){
 	}
 }
 
+render_banner();
 load_proj_data();

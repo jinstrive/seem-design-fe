@@ -5,11 +5,13 @@
 	<title>首页 -- 什目视觉</title>
 	<meta name="description" content="什目视觉 视觉方面高端定制，Logo/VI/UI/网站设计/海报设计/APP设计/字体设计/包装设计">
 	<meta name="keywords" content="什目,视觉,设计,什目视觉工作室,视觉方面高端定制,Logo,VI,vi,UI,ui,网站设计,海报设计,APP设计,字体设计,包装设计">
-	<link rel="stylesheet" type="text/css" href="../static/css/common.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+	<link href="http://cdn.bootcss.com/Swiper/3.2.0/css/swiper.min.css" rel="stylesheet">
 	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
 	<script src="http://cdn.bootcss.com/handlebars.js/4.0.3/handlebars.min.js"></script>
+    <script src="http://cdn.bootcss.com/Swiper/3.2.0/js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/index.css">
 </head>
 <body>
 	<div class="main">
@@ -29,10 +31,17 @@
 			</div>
 		</div>
 		<div class="body_content">
-			<div class="big_banner">
+			<div class="swiper-container">
+			    <div id="swiper-wrapper" class="swiper-wrapper">
+			        <!-- <div class="swiper-slide"><a href=""><img src="http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144836689965.png" alt=""></a></div>
+ -->			</div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			</div>
+<!-- 			<div class="big_banner">
 				<img src="http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144836689965.png" alt="">
 			</div>
-
+ -->
 			<div class="image_show">
 				<ul id="index_pros_list">
 				</ul>
@@ -56,6 +65,12 @@
 	<div id="back-to-top" class="back-to-top" style="display:none;">
 	</div>
 
+	<script id="index-banner-list-template" type="text/x-handlebars-template">
+		{{#each this}}
+		<div class="swiper-slide"><a href="{{ link }}"><img src="{{ img }}" alt=""></a></div>
+		{{/each}}
+	</script>
+
 	<script id="index-pros-list-template" type="text/x-handlebars-template">
 		{{#each this}}
 		<li>
@@ -68,6 +83,7 @@
 		</li>
 		{{/each}}
 	</script>
+
 	<script src="../static/js/index.js"></script>
 	<script src="../static/js/base.js"></script>
 </body>
