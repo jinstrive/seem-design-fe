@@ -13,7 +13,7 @@ $(function(){
     //点击回到顶部的元素
     $("#back-to-top").click(function(e) {
         //以1秒的间隔返回顶部
-        $('body,html').animate({scrollTop:0},1000);
+        $('body,html').animate({scrollTop:0},500);
     });
     goTop();//实现回到顶部元素的渐显与渐隐
 });
