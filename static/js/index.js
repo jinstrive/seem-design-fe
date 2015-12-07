@@ -35,8 +35,9 @@ function load_proj_data(){
 				console.log(pros_list);
 				render_pros(pros_list);
 				curPage += 1;
-				if (pros_list.length <= 1){
+				if (pros_list.length <= 1 || pros_list.length == undefined){
 					is_more = false;
+					$(".signaline").html("<p>more</p>");
 				}
 	    	}
 	  	});
