@@ -40,7 +40,7 @@ function load_projects_data(){
 		$.ajax({ 
 			type: 'GET',
 			url: "/seems/all_pro_info", 
-			data: {'page_num': curPage + 1, 'page_size': 12, 'ptype': getUrlParam('ptype')}, 
+			data: {'page_num': curPage + 1, 'page_size': 18, 'ptype': getUrlParam('ptype')}, 
 			success: function(data_json){
 				projects_list = data_json.data;
 				console.log(projects_list);
