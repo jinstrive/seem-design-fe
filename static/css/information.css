@@ -41,12 +41,13 @@
 .personame p {
 	margin-bottom: 5px;
 }
+
 .personame p span {
 	font-size: 18px;
 	margin-right: 10px;
 }
 
-.eng_personame span {
+.personame .eng_personame > span {
 	font-size: 16px;
 }
 
