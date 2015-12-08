@@ -36,7 +36,7 @@ function render_banner() {
 			var swiper = new Swiper('.swiper-container', {
 		        pagination: '.swiper-pagination',
 		        paginationClickable: true,
-		        autoplay: 2000,
+		        autoplay: 5000,
 		        loop: true,
 		    });
     	}

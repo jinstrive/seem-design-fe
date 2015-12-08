@@ -97,6 +97,10 @@ body {
 	background: url(http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144929453225.png);
 }
 
+.swiper-pagination-bullet-active {
+	background: #000000;
+}
+
 .fs14 {
 	font-size: 14px;
 }
