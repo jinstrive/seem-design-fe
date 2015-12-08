@@ -60,7 +60,7 @@ function load_proj_data(){
 				curPage += 1;
 				if (pros_list.length <= 1 || pros_list.length == undefined){
 					is_more = false;
-					$(".signaline").html("<p>more</p>");
+					$(".signaline").html("<p style='text-decoration: none;'>more</p>");
 				}
 	    	}
 	  	});

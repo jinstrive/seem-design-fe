@@ -13,6 +13,7 @@ body {
 .body_content {
 	margin: 0 auto;
 	width: 1000px;
+	position: relative;
 }
 
 .body-text-content {
@@ -88,6 +89,7 @@ body {
 	background: url(http://7xnvhf.com1.z0.glb.clouddn.com/op_upload/1/144929454824.png);
 	width: 43px;
 	height: 43px;
+	display: none;
 }
 
 .back-to-top:hover {
@@ -97,4 +99,9 @@ body {
 
 .fs14 {
 	font-size: 14px;
+}
+@media all and (max-width: 1000px){
+	.back-to-top{
+		display: none!important;
+	}
 }
